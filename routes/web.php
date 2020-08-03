@@ -34,3 +34,7 @@ Route::get('/show/{post}', 'PostController@show');
 Route::get('/posts/{post}/edit', 'PostController@edit');
 
 Route::PATCH('/update/{post}', 'PostController@update');
+
+Route::get('/items', function() {
+    return view('items');
+});
